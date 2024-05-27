@@ -1,0 +1,19 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "projet ohmyfood",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Julie30at/Projet_Ohmyfood.git"
+  },
+  "author": "julie at",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Julie30at/Projet_Ohmyfood/issues"
+  },
+  "homepage": "https://github.com/Julie30at/Projet_Ohmyfood#readme"
+}
