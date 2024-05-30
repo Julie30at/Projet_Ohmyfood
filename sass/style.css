@@ -5,6 +5,7 @@ body {
   max-width: 768px;
   min-width: 100%;
   background-color: white;
+  margin: 0px;
 }
 
 * {
@@ -12,9 +13,10 @@ body {
 }
 
 img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 15px 15px 0px 0px;
   max-width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 a {
@@ -47,6 +49,7 @@ header .logo_bar {
           justify-content: center;
   -webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+  position: relative;
 }
 header .location {
   display: -webkit-box;
@@ -83,20 +86,26 @@ header .location p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background-color: #f6f6f6;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #f6f6f6;
+}
+.app_bar_text {
+  text-align: center;
 }
 .app_bar .title {
   font-family: roboto, sans-serif;
   font-weight: bold;
   font-size: 24px;
+  margin: 0px;
+  padding-top: 35px;
 }
 .app_bar p {
   font-family: roboto, sans-serif;
-  font-weight: lighter;
+  font-weight: 300;
   font-size: 18px;
+  padding-bottom: 20px;
 }
 .app_bar button {
   width: 218px;
@@ -109,6 +118,7 @@ header .location p {
   color: #ffffff;
   font-size: 16px;
   margin-bottom: 25px;
+  margin-bottom: 50px;
 }
 
 /*functioning*/
@@ -125,14 +135,24 @@ header .location p {
   font-family: roboto, sans-serif;
   font-weight: bold;
   font-size: 24px;
+  padding-left: 25px;
 }
 .functioning_list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px;
+  width: 100%;
 }
 .functioning_list li {
   display: -webkit-box;
@@ -149,8 +169,10 @@ header .location p {
           box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   background-color: #f6f6f6;
   gap: 23px;
-  margin: 20px;
-  width: 100%;
+  padding: 20px;
+  margin-bottom: 25px;
+  width: 80%;
+  position: relative;
 }
 .functioning_list li .fa-solid {
   color: #7e7e7e;
@@ -158,6 +180,31 @@ header .location p {
 .functioning_list li p {
   font-size: 16px;
   font-weight: 500;
+}
+.functioning_list li .position_number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  z-index: 1;
+  left: -10px;
+}
+.functioning_list li .number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 24px;
+  height: 24px;
+  border-radius: 20px;
+  background: #9356dc;
+  color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 14px;
 }
 
 /*restaurant*/
@@ -186,11 +233,7 @@ header .location p {
   background-color: #ffffff;
   border-radius: 18px;
   gap: 15px;
-}
-.restaurants_cards .card img {
-  border-radius: 15px 15px 0px 0px;
-  width: 100%;
-  height: 175px;
+  padding-bottom: 20px;
 }
 .restaurants_cards .card_content {
   display: -webkit-box;
@@ -204,20 +247,27 @@ header .location p {
           align-items: center;
   padding: 0px 13px;
 }
+.restaurants_cards .card_content_text h3 {
+  margin: 2px;
+}
+.restaurants_cards .card_content_text p {
+  margin: 0px;
+}
 .restaurants_cards .card_content .fa-regular {
   font-size: 22px;
+  padding-right: 20px;
 }
-.restaurants_cards .new_card {
+.restaurants_cards .card .new_card {
   position: relative;
 }
-.restaurants_cards .new_card .new {
+.restaurants_cards .card .new_card .new {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: absolute;
   z-index: 1;
   top: 15px;
-  right: 15px;
+  right: 20px;
   background-color: #99e2d0;
   color: #008766;
   border-radius: 2px;

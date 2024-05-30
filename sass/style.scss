@@ -26,7 +26,7 @@ $buton_gradient: linear-gradient(193deg, rgba(255,121,218,1) -11.44%, rgba(147,8
 
 @mixin font_p {
     font-family: $main_font;
-    font-weight: lighter;
+    font-weight: 300;
     font-size: 18px;
     }
 
@@ -48,6 +48,7 @@ body {
     max-width: 768px;
     min-width: 100%;
     background-color: white;
+    margin: 0px;
     }
 
 *{
@@ -55,8 +56,9 @@ body {
 }    
 
 img {
+    object-fit: contain;
+    border-radius: 15px 15px 0px 0px;
     max-width: 100%;
-    object-fit: cover;
 }
 
 a {
@@ -73,13 +75,14 @@ button {
 header {
     display: flex;
     flex-direction: column;
-
+    
     .logo_bar {
         display: flex;
         height: 63px;
         padding: 14px 89px 13px 89px;
         justify-content: center;
         box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+        position: relative;
     }
 
     .location {
@@ -107,19 +110,28 @@ header {
 .app_bar {
     display: flex;
     flex-direction: column;
-    align-items: center;
     background-color: #f6f6f6;
+    align-items: center;
+
+    &_text {
+      text-align: center
+    }
 
       .title {
         @include font_title;
+        margin: 0px;
+        padding-top: 35px
+        
       }
 
       p {
         @include font_p;
+        padding-bottom: 20px
       }
 
       button {
         @include button;
+        margin-bottom: 50px;
       }
 }
 
@@ -131,13 +143,18 @@ header {
 
        h2 {
         @include font_title;
+        padding-left: 25px;
        }
 
        &_list {
           display: flex;
+          flex-direction: column;
           justify-content: center;
-          
-          li {
+          align-items: center;
+          padding: 0px;
+          width: 100%;
+
+         li {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -145,16 +162,37 @@ header {
             box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
             background-color: #f6f6f6;
             gap: 23px;
-            margin: 20px;
-            width: 100%;
+            padding: 20px;
+            margin-bottom: 25px;
+            width: 80%;
+            position: relative;
 
                .fa-solid {
                 color: #7e7e7e;
                }
 
-               p{
+               p {
                 font-size: 16px;
                 font-weight: 500;
+               } 
+
+               .position_number {
+                display: flex;
+                position: absolute;
+                z-index: 1;
+                left: -10px;
+               }
+               
+               .number{
+                display: flex;
+                width: 24px;
+                height: 24px;
+                border-radius: 20px;
+                background: $icon_color;
+                color: white;
+                align-items: center;
+                justify-content: center;
+                font-size: 14px;
                }
           }
        }
@@ -178,24 +216,26 @@ header {
     background-color: #ffffff;
     border-radius: 18px;
     gap: 15px;
-
-      img {
-        border-radius: 15px 15px 0px 0px;
-        width: 100%;
-        height: 175px;
-      }
+    padding-bottom: 20px;
+  
+    
         &_content {
           display: flex;
           justify-content: space-between;
           align-items: center;
           padding: 0px 13px;
 
+          &_text {
+                h3 { margin: 2px;}
+                p {margin: 0px;}
+          }
+
           .fa-regular {
             font-size: 22px;
+            padding-right: 20px;
           }
-        }
-
-     }
+         }   
+  
 
   .new_card {
     position: relative;
@@ -205,7 +245,7 @@ header {
       position: absolute;
       z-index: 1;
       top: 15px;
-      right: 15px;
+      right: 20px;
       background-color: $second_color;
       color: $new_color;
       border-radius: 2px;
@@ -220,6 +260,8 @@ header {
    }
   }
 }
+}
+
 
 /*footer*/
 
