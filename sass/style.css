@@ -4,8 +4,9 @@
 body {
   max-width: 768px;
   min-width: 100%;
-  background-color: white;
+  background-color: #ffffff;
   margin: 0px;
+  font-family: roboto, sans-serif;
 }
 
 * {
@@ -69,8 +70,8 @@ header .location {
           justify-content: center;
   gap: 17px;
   color: #353535;
-  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
 }
 header .location p {
   font-size: 16px;
@@ -95,14 +96,12 @@ header .location p {
   text-align: center;
 }
 .app_bar .title {
-  font-family: roboto, sans-serif;
   font-weight: bold;
   font-size: 24px;
   margin: 0px;
   padding-top: 35px;
 }
 .app_bar p {
-  font-family: roboto, sans-serif;
   font-weight: 300;
   font-size: 18px;
   padding-bottom: 20px;
@@ -114,7 +113,6 @@ header .location p {
   background: linear-gradient(193deg, rgb(255, 121, 218) -11.44%, rgb(147, 86, 220) 123.93%);
   -webkit-box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-  font-family: roboto, sans-serif;
   color: #ffffff;
   font-size: 16px;
   margin-bottom: 25px;
@@ -132,7 +130,6 @@ header .location p {
           flex-direction: column;
 }
 .functioning h2 {
-  font-family: roboto, sans-serif;
   font-weight: bold;
   font-size: 24px;
   padding-left: 25px;
@@ -197,7 +194,7 @@ header .location p {
   height: 24px;
   border-radius: 20px;
   background: #9356dc;
-  color: white;
+  color: #ffffff;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -319,4 +316,5 @@ header .location p {
           filter: invert(1);
   width: 137px;
   padding-bottom: 25px;
+  border-radius: 0px;
 }

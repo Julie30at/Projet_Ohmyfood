@@ -1,31 +1,32 @@
 /*variables*/
 
 $background_color: #eaeaea;
+$second_background_color : #f6f6f6;
+$white_color: #ffffff;
 $second_color: #99e2d0;
 $icon_color: #9356dc;
 $location_color: #eaeaea;
 $footer_color: #353535;
-$footer_color_text: #ffffff;
 $new_color: #008766;
 $main_font: roboto, sans-serif;
 $buton_gradient: linear-gradient(193deg, rgba(255,121,218,1) -11.44%, rgba(147,86,220,1) 123.93%);
+$shadow_light: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+$shadow_medium: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+$shadow_dark: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
 
 /*mixin*/
 
 @mixin font_title {
-    font-family: $main_font;
     font-weight: bold;
     font-size: 24px;
     }    
 
 @mixin font_second_title {
-    font-family: $main_font;
     font-weight: medium;
     font-size: 18px;
     }
 
 @mixin font_p {
-    font-family: $main_font;
     font-weight: 300;
     font-size: 18px;
     }
@@ -35,20 +36,24 @@ $buton_gradient: linear-gradient(193deg, rgba(255,121,218,1) -11.44%, rgba(147,8
     height: 50px;
     border-radius: 25px;
     background: $buton_gradient;
-    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-    font-family: $main_font;
-    color: #ffffff;
+    box-shadow: $shadow_medium;
+    color: $white_color;
     font-size: 16px;
     margin-bottom: 25px;
     }
+
+    @mixin box_shadow($shadow) {
+      box-shadow: $shadow;
+  }
 
 /*general*/
 
 body {
     max-width: 768px;
     min-width: 100%;
-    background-color: white;
+    background-color: $white_color;
     margin: 0px;
+    font-family: $main_font;
     }
 
 *{
@@ -81,7 +86,7 @@ header {
         height: 63px;
         padding: 14px 89px 13px 89px;
         justify-content: center;
-        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+        @include box_shadow($shadow_light);
         position: relative;
     }
 
@@ -94,15 +99,13 @@ header {
        justify-content: center;
        gap: 17px;
        color: $footer_color;
-       box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+       @include box_shadow($shadow_medium);
 
         p {
            font-size: 16px;
            font-weight: 500;
          }
-
     }       
-
 }
 
 /*app_bar*/
@@ -110,7 +113,7 @@ header {
 .app_bar {
     display: flex;
     flex-direction: column;
-    background-color: #f6f6f6;
+    background-color: $second_background_color;
     align-items: center;
 
     &_text {
@@ -159,8 +162,8 @@ header {
             align-items: center;
             justify-content: center;
             border-radius: 20px;
-            box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-            background-color: #f6f6f6;
+            @include box_shadow($shadow_dark);
+            background-color: $second_background_color;
             gap: 23px;
             padding: 20px;
             margin-bottom: 25px;
@@ -189,7 +192,7 @@ header {
                 height: 24px;
                 border-radius: 20px;
                 background: $icon_color;
-                color: white;
+                color: $white_color;
                 align-items: center;
                 justify-content: center;
                 font-size: 14px;
@@ -201,7 +204,7 @@ header {
 /*restaurant*/
 
 .restaurants {
-  background-color: #f6f6f6;
+  background-color: $second_background_color;
   padding: 25px 17px;
 
   &_cards{
@@ -213,7 +216,7 @@ header {
      .card {
     display: flex;
     flex-direction: column;
-    background-color: #ffffff;
+    background-color: $white_color;
     border-radius: 18px;
     gap: 15px;
     padding-bottom: 20px;
@@ -236,7 +239,6 @@ header {
           }
          }   
   
-
   .new_card {
     position: relative;
     
@@ -249,7 +251,7 @@ header {
       background-color: $second_color;
       color: $new_color;
       border-radius: 2px;
-      box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+      @include box_shadow($shadow_light);
       width: 80px;
       height: 29px;
       justify-content: center;
@@ -259,15 +261,14 @@ header {
     }
    }
   }
+ }
 }
-}
-
 
 /*footer*/
 
 .footer {
   background-color: $footer_color;
-  color: $footer_color_text;
+  color: $white_color;
   display: flex;
   flex-direction: column;
   padding: 22px 25px;
@@ -287,5 +288,6 @@ header {
       filter: invert(1);
       width: 137px;
       padding-bottom: 25px;
+      border-radius: 0px;
      }
 }
