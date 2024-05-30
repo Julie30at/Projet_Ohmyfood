@@ -1,0 +1,249 @@
+/*variables*/
+
+$background_color: #eaeaea;
+$second_color: #99e2d0;
+$icon_color: #9356dc;
+$location_color: #eaeaea;
+$footer_color: #353535;
+$footer_color_text: #ffffff;
+$new_color: #008766;
+$main_font: roboto, sans-serif;
+$buton_gradient: linear-gradient(193deg, rgba(255,121,218,1) -11.44%, rgba(147,86,220,1) 123.93%);
+
+/*mixin*/
+
+@mixin font_title {
+    font-family: $main_font;
+    font-weight: bold;
+    font-size: 24px;
+    }    
+
+@mixin font_second_title {
+    font-family: $main_font;
+    font-weight: medium;
+    font-size: 18px;
+    }
+
+@mixin font_p {
+    font-family: $main_font;
+    font-weight: lighter;
+    font-size: 18px;
+    }
+
+@mixin button {
+    width: 218px;
+    height: 50px;
+    border-radius: 25px;
+    background: $buton_gradient;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    font-family: $main_font;
+    color: #ffffff;
+    font-size: 16px;
+    margin-bottom: 25px;
+    }
+
+/*general*/
+
+body {
+    max-width: 768px;
+    min-width: 100%;
+    background-color: white;
+    }
+
+*{
+  font-family: $main_font;
+}    
+
+img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button {
+  border: none;
+}
+
+/*header*/
+
+header {
+    display: flex;
+    flex-direction: column;
+
+    .logo_bar {
+        display: flex;
+        height: 63px;
+        padding: 14px 89px 13px 89px;
+        justify-content: center;
+        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+    }
+
+    .location {
+       display: flex;
+       flex-direction: row;
+       height: 50px;
+       background-color: $location_color;
+       align-items: center;
+       justify-content: center;
+       gap: 17px;
+       color: $footer_color;
+       box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+        p {
+           font-size: 16px;
+           font-weight: 500;
+         }
+
+    }       
+
+}
+
+/*app_bar*/
+
+.app_bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f6f6f6;
+
+      .title {
+        @include font_title;
+      }
+
+      p {
+        @include font_p;
+      }
+
+      button {
+        @include button;
+      }
+}
+
+/*functioning*/
+
+.functioning {
+  display: flex;
+  flex-direction: column;
+
+       h2 {
+        @include font_title;
+       }
+
+       &_list {
+          display: flex;
+          justify-content: center;
+          
+          li {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 20px;
+            box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+            background-color: #f6f6f6;
+            gap: 23px;
+            margin: 20px;
+            width: 100%;
+
+               .fa-solid {
+                color: #7e7e7e;
+               }
+
+               p{
+                font-size: 16px;
+                font-weight: 500;
+               }
+          }
+       }
+}
+
+/*restaurant*/
+
+.restaurants {
+  background-color: #f6f6f6;
+  padding: 25px 17px;
+
+  &_cards{
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+     .card {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 18px;
+    gap: 15px;
+
+      img {
+        border-radius: 15px 15px 0px 0px;
+        width: 100%;
+        height: 175px;
+      }
+        &_content {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 0px 13px;
+
+          .fa-regular {
+            font-size: 22px;
+          }
+        }
+
+     }
+
+  .new_card {
+    position: relative;
+    
+     .new {
+      display: flex;
+      position: absolute;
+      z-index: 1;
+      top: 15px;
+      right: 15px;
+      background-color: $second_color;
+      color: $new_color;
+      border-radius: 2px;
+      box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+      width: 80px;
+      height: 29px;
+      justify-content: center;
+      align-items: center;
+      font-size: 14px;
+      font-weight: 500;
+    }
+   }
+  }
+}
+
+/*footer*/
+
+.footer {
+  background-color: $footer_color;
+  color: $footer_color_text;
+  display: flex;
+  flex-direction: column;
+  padding: 22px 25px;
+
+     &_links {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }      
+    
+     .link_icon {
+      display: flex;
+      gap: 11px;
+     }  
+     
+     img {
+      filter: invert(1);
+      width: 137px;
+      padding-bottom: 25px;
+     }
+}
