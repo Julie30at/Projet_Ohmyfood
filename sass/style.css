@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*variables*/
 /*mixin*/
 /*general*/
@@ -105,15 +106,11 @@ header .header_restaurant {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 14px;
-  padding-bottom: 14px;
+  padding: 14px 30% 14px 0px;
 }
 header .header_restaurant .back_arrow {
   font-size: x-large;
   padding-left: 17px;
-}
-header .header_restaurant img {
-  padding-right: 25%;
 }
 
 /*app_bar*/
@@ -353,6 +350,120 @@ header .header_restaurant img {
           align-items: center;
   font-size: 14px;
   font-weight: 500;
+}
+
+/*restaurant la palette du goût*/
+.restaurant_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #f6f6f6;
+  width: 100%;
+  border-radius: 50px 50px 0px 0px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.restaurant_menu .title_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 25px 50px 25px 25px;
+  width: 90%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.restaurant_menu .title_menu_text {
+  font-family: Shrikhand, sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+}
+.restaurant_menu .title_menu .fa-regular {
+  font-size: 22px;
+}
+.restaurant_menu .dishes_type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 95%;
+  border: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 35px;
+}
+.restaurant_menu .dishes_type_title {
+  border-bottom: 6px solid #99e2d0;
+  padding-bottom: 7px;
+}
+.restaurant_menu .dishes_type button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: #ffffff;
+  border-radius: 25px;
+  background-color: #ffffff;
+  margin: 9px 13px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.restaurant_menu .dishes_type button .dishes_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+  padding: 15px;
+  text-align: left;
+}
+.restaurant_menu .dishes_type button .dishes_text h4 {
+  font-weight: medium;
+  font-size: 18px;
+  margin: 0px;
+}
+.restaurant_menu .dishes_type button .dishes_text p {
+  font-weight: 300;
+  font-size: 15px;
+  margin: 0px;
+}
+.restaurant_menu .dishes_type button .dishes_price {
+  font-weight: 300;
+  font-size: 15px;
+  margin: 0px;
+  font-weight: 700;
+  padding: 20px;
+}
+.restaurant_menu .button {
+  width: 218px;
+  height: 50px;
+  border-radius: 25px;
+  background: linear-gradient(350deg, #9356DC -11.44%, #FF79DA 123.93%);
+  -webkit-box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  color: #ffffff;
+  font-size: 16px;
+  margin-bottom: 25px;
+  -webkit-transition: all 300ms ease-in;
+  transition: all 300ms ease-in;
+  border: none;
+  margin-bottom: 40px;
 }
 
 /*footer*/
