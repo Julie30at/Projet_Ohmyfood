@@ -6,7 +6,6 @@
 
   <meta charset="utf-8">
   <title>Menu - La note enchantée</title>
-  <link rel="stylesheet" href="#">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
@@ -20,11 +19,15 @@
 
     <header>
 
+        <div  class="header_restaurant">
+
         <a href="/index.html" class="back_arrow">
             <i class="fa-solid fa-arrow-left"></i>
         </a>
 
         <img src="/assets/images/logo/ohmyfood.png" alt="logo ohmyfood">
+
+        </div>
 
     </header>
 
@@ -35,54 +38,109 @@
         <form class="restaurant_menu">
 
             <div class="title_menu">
-                <label for="dishes_choices">La note enchantée</label>
-                <i class="fa-regular fa-heart"></i>
+                <label class="title_menu_text" for="dishes_choices">La note enchantée</label>
+                <div class="fa_heart">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-solid fa-heart"></i>
+                </div>
             </div>
 
             <fieldset class="dishes_type">
 
-                    <legend>ENTRÉES</legend>
+                    <legend class="dishes_type_title">ENTRÉES</legend>
 
                 <button type="button">
+
+                    <div class="dishes_text">
 
                     <h4>Ravioles de foie gras </h4>
 
+                    <p>Accompagnées de leur crème à la truffe</p>
+
+                    </div>
+
                     <div class="dishes_price">
-                        <p>Accompagnées de leur crème à la truffe</p>
+
                         <p>25€</p>
+                          
+                        <div class="dishes_price_transition">
+
+                            <i class="fa-solid fa-circle-check"></i>
+
+                        </div>
+                        
                     </div>
 
                 </button>
 
                 <button type="button">
+
+                    <div class="dishes_text">
 
                     <h4>Caviar osciètre </h4>
 
+                    <p>Sur blini à la farine de blé noir</p>
+
+                    </div>
+
                     <div class="dishes_price">
-                        <p>Sur blini à la farine de blé noir</p>
+
                         <p>35€</p>
+                          
+                        <div class="dishes_price_transition">
+
+                            <i class="fa-solid fa-circle-check"></i>
+
+                        </div>
+                        
                     </div>
 
                 </button>
 
                 <button type="button">
+
+                    <div class="dishes_text">
 
                     <h4>Homard et espuma de potiron</h4>
 
+                    <p>Marinés aux zestes d'orange</p>
+
+                    </div>
+
                     <div class="dishes_price">
-                        <p>Marinés aux zestes d'orange</p>
+
                         <p>20€</p>
+                          
+                        <div class="dishes_price_transition">
+
+                            <i class="fa-solid fa-circle-check"></i>
+
+                        </div>
+                        
                     </div>
 
                 </button>
 
                 <button type="button">
+
+                    <div class="dishes_text">
 
                     <h4>Foie gras de canard cuit entier</h4>
 
+                    <p>Confiture de figue et pain toasté</p>
+
+                    </div>
+
                     <div class="dishes_price">
-                        <p>Confiture de figue et pain toasté</p>
+
                         <p>35€</p>
+                          
+                        <div class="dishes_price_transition">
+
+                            <i class="fa-solid fa-circle-check"></i>
+
+                        </div>
+                        
                     </div>
 
                 </button>
@@ -91,37 +149,76 @@
 
             <fieldset class="dishes_type">
 
-                <legend>Plats</legend>
+                <legend class="dishes_type_title">Plats</legend>
 
                 <button type="button">
+
+                    <div class="dishes_text">
 
                     <h4>Noix de coquilles Saint-Jacques</h4>
 
+                    <p>Sur lit de purée de céleri-rave</p>
+
+                    </div>
+
                     <div class="dishes_price">
-                        <p>Sur lit de purée de céleri-rave</p>
+
                         <p>40€</p>
+                          
+                        <div class="dishes_price_transition">
+
+                            <i class="fa-solid fa-circle-check"></i>
+
+                        </div>
+                        
                     </div>
 
                 </button>
 
                 <button type="button">
+
+                    <div class="dishes_text">
 
                     <h4>Langoustine poêlée</h4>
 
+                    <p>Purée de patate douce</p>
+
+                    </div>
+
                     <div class="dishes_price">
-                        <p>Purée de patate douce</p>
+
                         <p>35€</p>
+                          
+                        <div class="dishes_price_transition">
+
+                            <i class="fa-solid fa-circle-check"></i>
+
+                        </div>
+                        
                     </div>
 
                 </button>
 
                 <button type="button">
 
+                    <div class="dishes_text">
+
                     <h4>Mijoté de queue de bœuf </h4>
 
+                    <p>Et riz sauvage aux zestes de citron</p>
+
+                    </div>
+
                     <div class="dishes_price">
-                        <p>Et riz sauvage aux zestes de citron</p>
+
                         <p>45€</p>
+                          
+                        <div class="dishes_price_transition">
+
+                            <i class="fa-solid fa-circle-check"></i>
+
+                        </div>
+                        
                     </div>
 
                 </button>
@@ -130,58 +227,99 @@
 
             <fieldset class="dishes_type">
 
-                <legend>Desserts</legend>
+                <legend class="dishes_type_title">Desserts</legend>
 
                 <button type="button">
+
+                    <div class="dishes_text">
 
                     <h4>Macaron noisette et chocolat</h4>
 
+                    <p>Glace au caramel brun et sel de Guérande</p>
+
+                    </div>
+
                     <div class="dishes_price">
-                        <p>Glace au caramel brun et sel de Guérande</p>
+
                         <p>18€</p>
+                          
+                        <div class="dishes_price_transition">
+
+                            <i class="fa-solid fa-circle-check"></i>
+
+                        </div>
+                        
                     </div>
 
                 </button>
 
                 <button type="button">
+
+                    <div class="dishes_text">
 
                     <h4>Baba au rhum revisité</h4>
 
+                    <p>Avec son coulis de citron</p>
+
+                    </div>
+
                     <div class="dishes_price">
-                        <p>Avec son coulis de citron</p>
+
                         <p>22€</p>
+                          
+                        <div class="dishes_price_transition">
+
+                            <i class="fa-solid fa-circle-check"></i>
+
+                        </div>
+                        
                     </div>
 
                 </button>
 
                 <button type="button">
 
+                    <div class="dishes_text">
+
                     <h4>Tarte au citron meringuée</h4>
 
+                    <p>Déstructurée</p>
+
+                    </div>
+
                     <div class="dishes_price">
-                        <p>Déstructurée</p>
+
                         <p>23€</p>
+                             
+                        <div class="dishes_price_transition">
+
+                            <i class="fa-solid fa-circle-check"></i>
+
+                        </div>
+
                     </div>
 
                 </button>
 
             </fieldset>
 
-            <input type="button" value="Commander">
+            <input class="button" type="button" value="Commander">
 
         </form>
 
     </main>
 
-    <footer>
+    <footer class="footer">
 
         <img src="/assets/images/logo/ohmyfood@2x.svg" alt="petit logo ohmyfood">
 
         <nav class="footer_links">
 
+            <div class="footer_links_responsive">
+
             <div class="link_icon">
                 <i class="fa-solid fa-utensils"></i>
-                <a href="">Proposer un restaurant</a>
+                <a class="link_icon_style" href="">Proposer un restaurant</a>
             </div> 
 
             <div class="link_icon">
@@ -189,11 +327,18 @@
                 <a href="">Devenir partenaire</a>
             </div>  
 
+            </div>
+
+            <div class="footer_links_responsive">
+
             <a href="">Mentions légales</a>
 
-            <a href="">Contact</a>
+            <a href="mailto:xxx@xxx.xx">Contact</a>
+
+            </div>
 
         </nav>
+
 
     </footer>
 
