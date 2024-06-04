@@ -413,10 +413,20 @@ header .location p {
   margin-bottom: 35px;
 }
 .restaurant_menu .dishes_type_title {
-  border-bottom: 6px solid #99e2d0;
-  padding-bottom: 7px;
+  padding-bottom: 6px;
+  margin: 0px;
+  font-size: 16px;
+  font-weight: 300;
 }
-.restaurant_menu .dishes_type button {
+.restaurant_menu .dishes_type_title_underline {
+  display: flex;
+  background-color: #99e2d0;
+  width: 3%;
+  padding: 3px;
+  margin: 0px;
+  margin-bottom: 10.5px;
+}
+.restaurant_menu .dishes_type_detail {
   display: flex;
   border: #ffffff;
   border-radius: 25px;
@@ -429,36 +439,36 @@ header .location p {
   cursor: pointer;
   transition: transform 0.5s ease-in-out;
 }
-.restaurant_menu .dishes_type button .dishes_text {
+.restaurant_menu .dishes_type_detail .dishes_text {
   display: flex;
   flex-direction: column;
   gap: 10px;
   padding: 15px;
   text-align: left;
 }
-.restaurant_menu .dishes_type button .dishes_text h4 {
-  font-weight: medium;
+.restaurant_menu .dishes_type_detail .dishes_text h3 {
+  font-weight: 500;
   font-size: 18px;
   margin: 0px;
 }
-.restaurant_menu .dishes_type button .dishes_text p {
+.restaurant_menu .dishes_type_detail .dishes_text p {
   font-weight: 300;
   font-size: 15px;
   margin: 0px;
 }
-.restaurant_menu .dishes_type button .dishes_price {
+.restaurant_menu .dishes_type_detail .dishes_price {
   display: flex;
   font-weight: 300;
   font-size: 15px;
   margin: 0px;
   font-weight: 700;
 }
-.restaurant_menu .dishes_type button .dishes_price p {
+.restaurant_menu .dishes_type_detail .dishes_price p {
   display: flex;
   padding: 20px;
   align-items: flex-end;
 }
-.restaurant_menu .dishes_type button .dishes_price_transition {
+.restaurant_menu .dishes_type_detail .dishes_price_transition {
   display: flex;
   background-color: #99e2d0;
   align-items: center;
@@ -471,7 +481,7 @@ header .location p {
   transform-origin: bottom right;
   transition: all 0.5s ease-in-out;
 }
-.restaurant_menu .dishes_type button:hover .dishes_price_transition {
+.restaurant_menu .dishes_type .dishes_type_detail:hover .dishes_price_transition {
   opacity: 1;
   padding: 30px;
 }
