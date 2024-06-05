@@ -1,17 +1,16 @@
 /*variables*/
 
-$background_color: #eaeaea;
-$second_background_color : #f6f6f6;
+$background_grey: #eaeaea;
+$background_grey_light: #f6f6f6;
 $white_color: #ffffff;
-$second_color: #99e2d0;
-$icon_color: #9356dc;
-$location_color: #eaeaea;
-$footer_color: #353535;
-$new_color: #008766;
-$main_font: roboto, sans-serif;
-$restaurant_font: Shrikhand, sans-serif; 
+$green_light: #99e2d0;
+$icon_purple: #9356dc;
+$footer_black: #353535;
+$new_green: #008766;
 $buton_gradient: linear-gradient(350deg, #9356DC -11.44%, #FF79DA 123.93%);
 $buton_gradient_transition: linear-gradient(340deg, #9356DC -5.2%, #FF79DA 110.74%);
+$main_font: roboto, sans-serif;
+$restaurant_font: Shrikhand, sans-serif; 
 $shadow_light: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
 $shadow_medium: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
 $shadow_dark: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
@@ -92,14 +91,14 @@ button {
 
 /*header*/
 
-.container-loader{
+.container_loader{
 	position: fixed;
-	background-color: #ffffff;
+	background-color: $background_grey_light;
 	height: 100vh;
 	inset: 0;
 	opacity: 0.9;
 	z-index: 2;
-	animation: disappear 1s 1s forwards;
+	animation: disappear 2s 1s forwards;
 	display: grid;
 	place-items: center;
 }
@@ -112,10 +111,10 @@ button {
 	}
 }
 
-.circle-loader{
+.circle_loader{
 	border: 10px solid $white_color;
-	border-top: 10px solid $icon_color;
-	border-bottom: 10px solid $new_color;
+	border-top: 10px solid $icon_purple;
+	border-bottom: 10px solid $new_green;
 	border-radius: 50%;
 	inset: 0;
 	width: 100px;
@@ -148,11 +147,11 @@ header {
        display: flex;
        flex-direction: row;
        height: 50px;
-       background-color: $location_color;
+       background-color: $background_grey;
        align-items: center;
        justify-content: center;
        gap: 17px;
-       color: $footer_color;
+       color: $footer_black;
        @include box_shadow($shadow_medium);
 
         p {
@@ -167,7 +166,7 @@ header {
 .app_bar {
     display: flex;
     flex-direction: column;
-    background-color: $second_background_color;
+    background-color: $background_grey_light;
     align-items: center;
 
     &_text {
@@ -224,7 +223,7 @@ header {
             justify-content: center;
             border-radius: 20px;
             @include box_shadow($shadow_dark);
-            background-color: $second_background_color;
+            background-color: $background_grey_light;
             gap: 23px;
             padding: 20px;
             margin-bottom: 25px;
@@ -235,7 +234,7 @@ header {
                 color: #7e7e7e;
 
                  &.fa-store {
-                  color: $icon_color;
+                  color: $icon_purple;
                  }
                }
 
@@ -256,7 +255,7 @@ header {
                 width: 24px;
                 height: 24px;
                 border-radius: 20px;
-                background: $icon_color;
+                background: $icon_purple;
                 color: $white_color;
                 align-items: center;
                 justify-content: center;
@@ -269,7 +268,7 @@ header {
 /*restaurant*/
 
 .restaurants {
-  background-color: $second_background_color;
+  background-color: $background_grey_light;
   padding: 25px 17px;
 
   &_cards{
@@ -318,7 +317,7 @@ header {
             transition: 500ms;
             
                 &:hover {
-              color: $icon_color;
+              color: $icon_purple;
                 }
               }
 
@@ -330,7 +329,7 @@ header {
                 transition: 500ms;
                 
                 &:hover {
-                  color: $icon_color;
+                  color: $icon_purple;
                 }
               }
           }
@@ -346,8 +345,8 @@ header {
       z-index: 1;
       top: 15px;
       right: 20px;
-      background-color: $second_color;
-      color: $new_color;
+      background-color: $green_light;
+      color: $new_green;
       border-radius: 2px;
       @include box_shadow($shadow_light);
       width: 80px;
@@ -364,7 +363,7 @@ header {
 /*footer*/
 
 .footer {
-  background-color: $footer_color;
+  background-color: $footer_black;
   color: $white_color;
   display: flex;
   flex-direction: column;
