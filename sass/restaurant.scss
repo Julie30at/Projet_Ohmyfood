@@ -16,8 +16,8 @@
 
   .title_menu {
     display: flex;
-    padding: 25px 50px 25px 25px;
-    width: 90%;
+    padding: 25px 25px 25px 25px;
+    width: 85%;
     justify-content: space-between;
     align-items: center;
        &_text {
@@ -42,7 +42,7 @@
            &_underline {
             display: flex;
             background-color: $green_light;
-            width: 3%;
+            width: 5%;
             padding: 3px;
             margin: 0px;
             margin-bottom: 10.5px;
