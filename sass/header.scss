@@ -1,0 +1,46 @@
+header {
+    display: flex;
+    flex-direction: column;
+    
+    .logo_bar {
+        display: flex;
+        height: 63px;
+        padding: 14px 89px 13px 89px;
+        justify-content: center;
+        @include box_shadow($shadow_light);
+        position: relative;
+    }
+
+    .location {
+       display: flex;
+       flex-direction: row;
+       height: 50px;
+       background-color: $background_grey;
+       align-items: center;
+       justify-content: center;
+       gap: 17px;
+       color: $footer_black;
+       @include box_shadow($shadow_medium);
+
+        p {
+           font-size: 16px;
+           font-weight: 500;
+         }
+    }  
+
+/********header restaurant pages**********/
+
+    .header_restaurant {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 14px 30% 14px 0px;
+    
+        .back_arrow {
+          font-size: x-large;
+          padding-left: 17px;
+        }
+       } 
+}
+

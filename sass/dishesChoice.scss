@@ -1,0 +1,60 @@
+.dishes_type_detail {
+        display: flex;
+        border: $white_color;
+        border-radius: 25px;
+        background-color: $white_color;
+        margin: 9px 13px;
+        flex-direction: row;
+        justify-content: space-between; 
+        align-items: center;
+        padding: 0px;
+        cursor: pointer;
+      
+      .dishes_text {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px;
+        text-align: left;
+
+      
+        h3 {
+          @include font_second_title;
+          margin: 0px;
+        }
+
+        p {
+          @include font_p_restaurant;
+        }
+      }
+
+      .dishes_price {
+        display: flex;
+        @include font_p_restaurant;
+        font-weight: 700;
+
+        p {
+            display: flex;
+            padding: 20px;
+            align-items: flex-end;
+        }
+
+          &_transition {
+            display: flex;
+            background-color: $green_light;
+            align-items: center;
+            border-radius: 0px 25px 25px 0px;
+            margin: 0px;
+            color: $white_color;
+            font-size: 30px;
+            max-height:  69px;
+            opacity: 0;
+            transform-origin: bottom right;     
+            transition: all 0.5s ease-in-out;
+        }
+      }
+    }
+      .dishes_type_detail:hover .dishes_price_transition {
+             opacity: 1;
+             padding: 30px;
+    }
