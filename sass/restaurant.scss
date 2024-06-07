@@ -26,12 +26,35 @@
 
   }
 
+  @keyframes appear {
+   from {
+      opacity: 0;
+      scale: 0;
+   }
+   to {
+      opacity: 1;
+      scale: 1;
+   }
+  }
+
     .dishes_type {
       display: flex;
       width: 95%;
       border: none;
       flex-direction: column;
       margin-bottom: 35px;
+
+           &_1 {
+            animation: appear 400ms ease-in-out forwards;
+           }
+           &_2 {
+            animation: appear 900ms ease-in-out 1100ms backwards;
+           }
+           &_3 {
+            animation: appear 1100ms ease-in-out 1800ms backwards;
+           }
+      
+            
 
        &_title {
         padding-bottom: 6px;
@@ -42,7 +65,7 @@
            &_underline {
             display: flex;
             background-color: $green_light;
-            width: 5%;
+            width: 3.5%;
             padding: 3px;
             margin: 0px;
             margin-bottom: 10.5px;

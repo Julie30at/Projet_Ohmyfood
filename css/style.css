@@ -348,12 +348,31 @@ header .header_restaurant img {
   font-size: 28px;
   font-weight: 400;
 }
+@keyframes appear {
+  from {
+    opacity: 0;
+    scale: 0;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
 .restaurant_menu .dishes_type {
   display: flex;
   width: 95%;
   border: none;
   flex-direction: column;
   margin-bottom: 35px;
+}
+.restaurant_menu .dishes_type_1 {
+  animation: appear 400ms ease-in-out forwards;
+}
+.restaurant_menu .dishes_type_2 {
+  animation: appear 900ms ease-in-out 1100ms backwards;
+}
+.restaurant_menu .dishes_type_3 {
+  animation: appear 1100ms ease-in-out 1800ms backwards;
 }
 .restaurant_menu .dishes_type_title {
   padding-bottom: 6px;
@@ -364,10 +383,52 @@ header .header_restaurant img {
 .restaurant_menu .dishes_type_title_underline {
   display: flex;
   background-color: #99e2d0;
-  width: 5%;
+  width: 3.5%;
   padding: 3px;
   margin: 0px;
   margin-bottom: 10.5px;
+}
+
+@keyframes apear_detail {
+  from {
+    scale: 0;
+    opacity: 0;
+    transform-origin: left;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+.dishes_type_1_1 {
+  animation: apear_detail 1s ease-in-out 400ms both;
+}
+.dishes_type_1_2 {
+  animation: apear_detail 2s ease-in-out 600ms both;
+}
+.dishes_type_1_3 {
+  animation: apear_detail 2s ease-in-out 800ms both;
+}
+.dishes_type_1_4 {
+  animation: apear_detail 2s ease-in-out 950ms both;
+}
+.dishes_type_2_1 {
+  animation: apear_detail 2s ease-in-out 1100ms both;
+}
+.dishes_type_2_2 {
+  animation: apear_detail 2s ease-in-out 1300ms both;
+}
+.dishes_type_2_3 {
+  animation: apear_detail 2s ease-in-out 1500ms both;
+}
+.dishes_type_3_1 {
+  animation: apear_detail 2s ease-in-out 1800ms both;
+}
+.dishes_type_3_2 {
+  animation: apear_detail 2s ease-in-out 2000ms both;
+}
+.dishes_type_3_3 {
+  animation: apear_detail 2s ease-in-out 2200ms both;
 }
 
 .dishes_type_detail {

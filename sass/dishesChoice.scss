@@ -1,3 +1,48 @@
+@keyframes apear_detail {
+  from {
+    scale: 0;
+    opacity: 0;
+    transform-origin: left;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+.dishes_type {
+     &_1_1 { 
+    animation: apear_detail 1s ease-in-out 400ms both;
+}
+    &_1_2 {
+      animation: apear_detail 2s ease-in-out 600ms both;
+    }
+    &_1_3 {
+      animation: apear_detail 2s ease-in-out 800ms both;
+    }
+    &_1_4 {
+      animation: apear_detail 2s ease-in-out 950ms both;
+    }
+    &_2_1 {
+      animation: apear_detail 2s ease-in-out 1100ms both;
+    }
+    &_2_2 {
+      animation: apear_detail 2s ease-in-out 1300ms both;
+    }
+    &_2_3 {
+      animation: apear_detail 2s ease-in-out 1500ms both;
+    }
+    &_3_1 {
+      animation: apear_detail 2s ease-in-out 1800ms both;
+    }
+    &_3_2 {
+      animation: apear_detail 2s ease-in-out 2000ms both;
+    }
+    &_3_3 {
+      animation: apear_detail 2s ease-in-out 2200ms both;
+    }
+}
+
 .dishes_type_detail {
         display: flex;
         border: $white_color;
