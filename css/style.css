@@ -226,10 +226,8 @@ header .header_restaurant img {
 .fa_heart .fa-solid {
   position: relative;
   background: linear-gradient(350deg, #9356DC -11.44%, #FF79DA 123.93%);
-  -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  -webkit-text-fill-color: transparent;
   font-size: 22px;
   padding-right: 20px;
   opacity: 0;
@@ -351,11 +349,11 @@ header .header_restaurant img {
 @keyframes appear {
   from {
     opacity: 0;
-    scale: 0;
+    transform: scale(0);
   }
   to {
     opacity: 1;
-    scale: 1;
+    transform: scale(1);
   }
 }
 .restaurant_menu .dishes_type {
@@ -391,13 +389,13 @@ header .header_restaurant img {
 
 @keyframes apear_detail {
   from {
-    scale: 0;
+    transform: scale(0);
     opacity: 0;
     transform-origin: left;
   }
   to {
     opacity: 1;
-    scale: 1;
+    transform: scale(1);
   }
 }
 .dishes_type_1_1 {

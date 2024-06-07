@@ -15,10 +15,8 @@
    .fa-solid {
      position: relative;
      background: $buton_gradient;
-     -webkit-background-clip: text;
      background-clip: text;
      color: transparent;
-     -webkit-text-fill-color: transparent;
      font-size: 22px;
      padding-right: 20px;
      opacity: 0;
