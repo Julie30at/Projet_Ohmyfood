@@ -49,6 +49,12 @@ $shadow_transition :0px 4px 15px 5px rgba(0, 0, 0, 0.25);
     margin: 0px;
   }
 
+  @mixin ellipse {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;   
+  }
+
 /**********global style*********/
 
 body {

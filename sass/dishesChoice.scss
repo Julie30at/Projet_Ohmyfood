@@ -45,6 +45,7 @@
 
 .dishes_type_detail {
         display: flex;
+        max-width: 100%;
         border: $white_color;
         border-radius: 25px;
         background-color: $white_color;
@@ -59,16 +60,20 @@
         display: flex;
         flex-direction: column;
         gap: 10px;
-        padding: 15px;
+        padding-left: 15px;
         text-align: left;
+        max-width: 280px;
+        @include ellipse;
       
         h3 {
           @include font_second_title;
           margin: 0px;
+          @include ellipse; 
         }
 
         p {
-          @include font_p_restaurant;
+          @include font_p_restaurant; 
+          @include ellipse; 
         }
       }
 
@@ -76,6 +81,8 @@
         display: flex;
         @include font_p_restaurant;
         font-weight: 700;
+        height: 100%;
+        border-radius: 0px 25px 25px 0px;
 
         p {
             display: flex;
@@ -90,15 +97,15 @@
             border-radius: 0px 25px 25px 0px;
             margin: 0px;
             color: $white_color;
-            font-size: 30px;
-            max-height:  69px;
-            opacity: 0;
-            transform-origin: bottom right;     
-            transition: all 0.5s ease-in-out;
+            font-size: 0px;
+            padding: 0px;
+            transform-origin: right;     
+            transition: all 700ms ease-out;
         }
       }
     }
+
       .dishes_type_detail:hover .dishes_price_transition {
-             opacity: 1;
              padding: 30px;
+             font-size: 30px;
     }
