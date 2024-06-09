@@ -514,6 +514,35 @@ header .header_restaurant img {
 }
 
 /*****tablette******/
+@media screen and (min-width: 768px) {
+  .restaurants {
+    padding: 25px 90px;
+  }
+  .restaurants_cards_responsive {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+  }
+  .restaurants_cards_responsive .card {
+    width: 50%;
+    margin-bottom: 30px;
+    margin-top: 20px;
+  }
+  .main_img {
+    height: 300px;
+  }
+  .restaurant_menu {
+    width: auto;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-left: 90px;
+    margin-right: 90px;
+  }
+  .restaurant_menu .title_menu {
+    justify-content: center;
+    gap: 25px;
+  }
+}
 /*****desktop******/
 @media screen and (min-width: 1224px) {
   .functioning {
@@ -532,31 +561,22 @@ header .header_restaurant img {
     padding: 25px 175px;
   }
   .restaurants_cards_responsive {
-    display: flex;
-    flex-direction: row;
     gap: 91px;
-  }
-  .restaurants_cards_responsive .card {
-    width: 50%;
-    margin-bottom: 30px;
-    margin-top: 20px;
   }
   /****** restaurants pages *********/
   .header_restaurant img {
     margin-right: 20%;
   }
   .main_img {
-    height: 950px;
+    height: 400px;
   }
   .restaurant_menu {
-    width: auto;
-    padding-left: 225px;
-    padding-right: 225px;
-    margin-left: 192px;
-    margin-right: 193px;
+    padding-left: 200px;
+    padding-right: 200px;
+    margin-left: 185px;
+    margin-right: 185px;
   }
   .restaurant_menu .title_menu {
-    justify-content: center;
     gap: 50px;
   }
   /********** footer ***********/
