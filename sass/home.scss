@@ -25,10 +25,11 @@
 .functioning {
   display: flex;
   flex-direction: column;
+  margin-top: 17px;
 
        h2 {
         @include font_title;
-        padding-left: 25px;
+        padding-left: 20px;
        }
 
        &_list {
@@ -47,7 +48,7 @@
             @include box_shadow($shadow_dark);
             background-color: $background_grey_light;
             gap: 23px;
-            padding: 20px;
+            padding: 12px;
             margin-bottom: 25px;
             width: 80%;
             position: relative;

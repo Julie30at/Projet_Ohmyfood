@@ -84,11 +84,12 @@ a {
 .functioning {
   display: flex;
   flex-direction: column;
+  margin-top: 17px;
 }
 .functioning h2 {
   font-weight: bold;
   font-size: 24px;
-  padding-left: 25px;
+  padding-left: 20px;
 }
 .functioning_list {
   display: flex;
@@ -106,7 +107,7 @@ a {
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   background-color: #f6f6f6;
   gap: 23px;
-  padding: 20px;
+  padding: 12px;
   margin-bottom: 25px;
   width: 80%;
   position: relative;
@@ -201,9 +202,8 @@ header .header_restaurant img {
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   color: #ffffff;
   font-size: 16px;
-  margin-bottom: 25px;
   transition: all 300ms ease-in;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 .button:hover {
   cursor: pointer;
@@ -213,8 +213,7 @@ header .header_restaurant img {
 }
 
 .fa_heart .fa-regular {
-  font-size: 22px;
-  padding-right: 20px;
+  font-size: 28px;
   position: absolute;
   opacity: 1;
   transition: 500ms ease-in-out;
@@ -227,8 +226,7 @@ header .header_restaurant img {
   background: linear-gradient(350deg, #9356DC -11.44%, #FF79DA 123.93%);
   background-clip: text;
   color: transparent;
-  font-size: 22px;
-  padding-right: 20px;
+  font-size: 28px;
   opacity: 0;
   transition: opacity 500ms ease-in-out;
 }
