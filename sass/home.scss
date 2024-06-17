@@ -17,7 +17,8 @@
 
       p {
         @include font_p;
-        padding-bottom: 20px
+        margin: 0px;
+        padding: 20px 34px 27px 34px;
       }
 
 }
