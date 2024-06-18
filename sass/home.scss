@@ -1,26 +1,24 @@
 .app_bar {
-    display: flex;
-    flex-direction: column;
-    background-color: $background_grey_light;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-color: $background_grey_light;
+  align-items: center;
 
-    &_text {
-      text-align: center
-    }
+  &_text {
+    text-align: center;
+  }
 
-      .title {
-        @include font_title;
-        margin: 0px;
-        padding-top: 35px
-        
-      }
+  .title {
+    @include font_title;
+    margin: 0px;
+    padding-top: 35px;
+  }
 
-      p {
-        @include font_p;
-        margin: 0px;
-        padding: 20px 34px 27px 34px;
-      }
-
+  p {
+    @include font_p;
+    margin: 0px;
+    padding: 20px 34px 27px 34px;
+  }
 }
 
 .functioning {
@@ -28,73 +26,73 @@
   flex-direction: column;
   margin-top: 17px;
 
-       h2 {
-        @include font_title;
-        padding-left: 20px;
-       }
+  h2 {
+    @include font_title;
+    padding-left: 20px;
+  }
 
-       &_list {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          padding: 0px;
-          width: 100%;
+  &_list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    width: 100%;
 
-         li {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 20px;
-            @include box_shadow($shadow_dark);
-            background-color: $background_grey_light;
-            gap: 23px;
-            padding: 12px;
-            margin-bottom: 25px;
-            width: 80%;
-            position: relative;
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 20px;
+      @include box_shadow($shadow_dark);
+      background-color: $background_grey_light;
+      gap: 23px;
+      padding: 12px;
+      margin-bottom: 25px;
+      width: 80%;
+      position: relative;
 
-               .fa-solid {
-                color: #7e7e7e;
+      .fa-solid {
+        color: #7e7e7e;
 
-                 &.fa-store {
-                  color: $icon_purple;
-                 }
-               }
+        &.fa-store {
+          color: $icon_purple;
+        }
+      }
 
-               p {
-                font-size: 16px;
-                font-weight: 500;
-               } 
+      p {
+        font-size: 16px;
+        font-weight: 500;
+      }
 
-               .position_number {
-                display: flex;
-                position: absolute;
-                z-index: 1;
-                left: -10px;
-               }
-               
-               .number{
-                display: flex;
-                width: 24px;
-                height: 24px;
-                border-radius: 20px;
-                background: $icon_purple;
-                color: $white_color;
-                align-items: center;
-                justify-content: center;
-                font-size: 14px;
-               }
-          }
-       }
+      .position_number {
+        display: flex;
+        position: absolute;
+        z-index: 1;
+        left: -10px;
+      }
+
+      .number {
+        display: flex;
+        width: 24px;
+        height: 24px;
+        border-radius: 20px;
+        background: $icon_purple;
+        color: $white_color;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+      }
+    }
+  }
 }
 
 .restaurants {
   background-color: $background_grey_light;
   padding: 25px 17px;
 
-  &_cards{
+  &_cards {
     display: flex;
     flex-direction: column;
   }
- }
+}

@@ -11,101 +11,101 @@
 }
 
 .dishes_type {
-     &_1_1 { 
+  &_1_1 {
     animation: apear_detail 1s ease-in-out 400ms both;
-}
-    &_1_2 {
-      animation: apear_detail 2s ease-in-out 600ms both;
-    }
-    &_1_3 {
-      animation: apear_detail 2s ease-in-out 800ms both;
-    }
-    &_1_4 {
-      animation: apear_detail 2s ease-in-out 950ms both;
-    }
-    &_2_1 {
-      animation: apear_detail 2s ease-in-out 1100ms both;
-    }
-    &_2_2 {
-      animation: apear_detail 2s ease-in-out 1300ms both;
-    }
-    &_2_3 {
-      animation: apear_detail 2s ease-in-out 1500ms both;
-    }
-    &_3_1 {
-      animation: apear_detail 2s ease-in-out 1800ms both;
-    }
-    &_3_2 {
-      animation: apear_detail 2s ease-in-out 2000ms both;
-    }
-    &_3_3 {
-      animation: apear_detail 2s ease-in-out 2200ms both;
-    }
+  }
+  &_1_2 {
+    animation: apear_detail 2s ease-in-out 600ms both;
+  }
+  &_1_3 {
+    animation: apear_detail 2s ease-in-out 800ms both;
+  }
+  &_1_4 {
+    animation: apear_detail 2s ease-in-out 950ms both;
+  }
+  &_2_1 {
+    animation: apear_detail 2s ease-in-out 1100ms both;
+  }
+  &_2_2 {
+    animation: apear_detail 2s ease-in-out 1300ms both;
+  }
+  &_2_3 {
+    animation: apear_detail 2s ease-in-out 1500ms both;
+  }
+  &_3_1 {
+    animation: apear_detail 2s ease-in-out 1800ms both;
+  }
+  &_3_2 {
+    animation: apear_detail 2s ease-in-out 2000ms both;
+  }
+  &_3_3 {
+    animation: apear_detail 2s ease-in-out 2200ms both;
+  }
 }
 
 .dishes_type_detail {
-        display: flex;
-        max-width: 100%;
-        border: $white_color;
-        border-radius: 25px;
-        background-color: $white_color;
-        margin: 9px 13px;
-        flex-direction: row;
-        justify-content: space-between; 
-        align-items: center;
-        padding: 0px;
-        cursor: pointer;
-      
-      .dishes_text {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        padding-left: 15px;
-        text-align: left;
-        max-width: 280px;
-        @include ellipse;
-      
-        h3 {
-          @include font_second_title;
-          margin: 0px;
-          @include ellipse; 
-        }
+  display: flex;
+  max-width: 100%;
+  border: $white_color;
+  border-radius: 25px;
+  background-color: $white_color;
+  margin: 9px 13px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  cursor: pointer;
 
-        p {
-          @include font_p_restaurant; 
-          @include ellipse; 
-        }
-      }
+  .dishes_text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 15px;
+    text-align: left;
+    max-width: 280px;
+    @include ellipse;
 
-      .dishes_price {
-        display: flex;
-        @include font_p_restaurant;
-        font-weight: 700;
-        height: 100%;
-        border-radius: 0px 25px 25px 0px;
-
-        p {
-            display: flex;
-            padding: 20px;
-            align-items: flex-end;
-        }
-
-          &_transition {
-            display: flex;
-            background-color: $green_light;
-            align-items: center;
-            border-radius: 0px 25px 25px 0px;
-            margin: 0px;
-            color: $white_color;
-            font-size: 0px;
-            padding: 0px;
-            transform-origin: right;     
-            transition: all 700ms ease-out;
-        }
-      }
+    h3 {
+      @include font_second_title;
+      margin: 0px;
+      @include ellipse;
     }
 
-      .dishes_type_detail:hover .dishes_price_transition {
-             padding: 30px;
-             font-size: 30px;
+    p {
+      @include font_p_restaurant;
+      @include ellipse;
     }
+  }
+
+  .dishes_price {
+    display: flex;
+    @include font_p_restaurant;
+    font-weight: 700;
+    height: 100%;
+    border-radius: 0px 25px 25px 0px;
+
+    p {
+      display: flex;
+      padding: 20px;
+      align-items: flex-end;
+    }
+
+    &_transition {
+      display: flex;
+      background-color: $green_light;
+      align-items: center;
+      border-radius: 0px 25px 25px 0px;
+      margin: 0px;
+      color: $white_color;
+      font-size: 0px;
+      padding: 0px;
+      transform-origin: right;
+      transition: all 700ms ease-out;
+    }
+  }
+}
+
+.dishes_type_detail:hover .dishes_price_transition {
+  padding: 30px;
+  font-size: 30px;
+}

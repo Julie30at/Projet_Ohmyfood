@@ -1,27 +1,26 @@
 .fa_heart {
+  .fa-regular {
+    font-size: 28px;
+    position: absolute;
+    opacity: 1;
+    transition: 500ms ease-in-out;
 
-    .fa-regular {
- font-size: 28px;
- position: absolute;
- opacity: 1;
- transition: 500ms ease-in-out;
- 
-     &:hover {
-   opacity: 0;
-     }
-   }
+    &:hover {
+      opacity: 0;
+    }
+  }
 
-   .fa-solid {
-     position: relative;
-     background: $buton_gradient;
-     background-clip: text;
-     color: transparent;
-     font-size: 28px;
-     opacity: 0;
-     transition: opacity 500ms ease-in-out;
- 
-   &:hover {
-     opacity: 1;
- }
-}  
+  .fa-solid {
+    position: relative;
+    background: $buton_gradient;
+    background-clip: text;
+    color: transparent;
+    font-size: 28px;
+    opacity: 0;
+    transition: opacity 500ms ease-in-out;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
 }

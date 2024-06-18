@@ -1,37 +1,35 @@
 .footer {
-    background-color: $footer_black;
-    color: $white_color;
+  background-color: $footer_black;
+  color: $white_color;
+  display: flex;
+  flex-direction: column;
+  padding: 22px 25px;
+
+  &_links {
     display: flex;
     flex-direction: column;
-    padding: 22px 25px;
-  
-       &_links {
-        display: flex;
-        flex-direction: column;
-        gap: 7px;
-  
-        &_responsive {
-          display: flex;
-          flex-direction: column;
-          gap: 7px;
-        }
-      }      
-      
-       .link_icon {
-        display: flex;
-        gap: 11px;
-  
-        &_style {
-          padding-left: 5px;
-        }
-       }  
-       
-       img {
-        filter: invert(1);
-        width: 137px;
-        padding-bottom: 25px;
-        border-radius: 0px;
-       }
+    gap: 7px;
+
+    &_responsive {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
   }
 
- 
+  .link_icon {
+    display: flex;
+    gap: 11px;
+
+    &_style {
+      padding-left: 5px;
+    }
+  }
+
+  img {
+    filter: invert(1);
+    width: 137px;
+    padding-bottom: 25px;
+    border-radius: 0px;
+  }
+}

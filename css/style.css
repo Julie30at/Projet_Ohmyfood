@@ -199,7 +199,7 @@ header .header_restaurant img {
   height: 50px;
   border: none;
   border-radius: 25px;
-  background: linear-gradient(350deg, #9356DC -11.44%, #FF79DA 123.93%);
+  background: linear-gradient(350deg, #9356dc -11.44%, #ff79da 123.93%);
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   color: #ffffff;
   font-size: 16px;
@@ -208,7 +208,7 @@ header .header_restaurant img {
 }
 .button:hover {
   cursor: pointer;
-  background: linear-gradient(340deg, #9356DC -5.2%, #FF79DA 110.74%);
+  background: linear-gradient(340deg, #9356dc -5.2%, #ff79da 110.74%);
   opacity: 0.8;
   box-shadow: 0px 4px 15px 5px rgba(0, 0, 0, 0.25);
 }
@@ -224,7 +224,7 @@ header .header_restaurant img {
 }
 .fa_heart .fa-solid {
   position: relative;
-  background: linear-gradient(350deg, #9356DC -11.44%, #FF79DA 123.93%);
+  background: linear-gradient(350deg, #9356dc -11.44%, #ff79da 123.93%);
   background-clip: text;
   color: transparent;
   font-size: 28px;

@@ -3,112 +3,107 @@
 @media screen and (min-width: 768px) {
   .restaurants {
     padding: 25px 90px;
-  
-       &_cards_responsive {
-          display: flex;
-          flex-direction: row;
-          gap: 50px;
-  
-          .card{
-            width: 50%;
-            margin-bottom: 30px;
-            margin-top: 20px;
-  
-          }      
-        }
-       }
 
-       .main_img {
-        height: 300px;
-      }
+    &_cards_responsive {
+      display: flex;
+      flex-direction: row;
+      gap: 50px;
 
-       .restaurant_menu {
-        width: auto;
-        padding-left: 100px;
-        padding-right: 100px;
-        margin-left: 90px;
-        margin-right: 90px;
-    
-        .title_menu {
-          justify-content: center;
-          gap: 25px;
-        }
+      .card {
+        width: 50%;
+        margin-bottom: 30px;
+        margin-top: 20px;
       }
+    }
+  }
+
+  .main_img {
+    height: 300px;
+  }
+
+  .restaurant_menu {
+    width: auto;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-left: 90px;
+    margin-right: 90px;
+
+    .title_menu {
+      justify-content: center;
+      gap: 25px;
+    }
+  }
 }
 
 /*****desktop******/
 
 @media screen and (min-width: 1224px) {
-
   .functioning {
-  
     padding-left: 200px;
     padding-right: 205px;
-    
-     &_list {
-    display: flex;
-    flex-direction: row;
-    gap: 35px;
+
+    &_list {
+      display: flex;
+      flex-direction: row;
+      gap: 35px;
+    }
+
+    h2 {
+      padding: 0px;
+    }
   }
 
-     h2 {
-    padding: 0px;
+  .restaurants {
+    padding: 25px 175px;
+
+    &_cards_responsive {
+      gap: 91px;
+    }
   }
-}
 
-.restaurants {
-  padding: 25px 175px;
+  /****** restaurants pages *********/
 
-     &_cards_responsive {
-        gap: 91px;    
+  .header_restaurant {
+    img {
+      margin-right: 20%;
+    }
+  }
+
+  .main_img {
+    height: 400px;
+  }
+
+  .restaurant_menu {
+    padding-left: 200px;
+    padding-right: 200px;
+    margin-left: 185px;
+    margin-right: 185px;
+
+    .title_menu {
+      gap: 50px;
+    }
+  }
+
+  /********** footer ***********/
+
+  .footer {
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    padding: 30px;
+    gap: 16px;
+
+    img {
+      padding: 30px 0px 0px 70px;
+    }
+
+    &_links {
+      flex-direction: row;
+
+      &_responsive {
+        flex-direction: row;
+        gap: 10px;
+        padding-right: 35px;
       }
-     }
-
-     /****** restaurants pages *********/
-
-     .header_restaurant {
-
-         img {
-          margin-right: 20%;
-         }
-     }
-     
-     .main_img {
-        height: 400px;
-      }
-      
-      .restaurant_menu {
-        padding-left: 200px;
-        padding-right: 200px;
-        margin-left: 185px;
-        margin-right: 185px;
-    
-        .title_menu {
-          gap: 50px;
-        }
-      }
-
-
-      /********** footer ***********/
-
-      .footer {
-        flex-direction: row-reverse;
-        align-items: flex-end;
-        padding: 30px;
-        gap: 16px;
-  
-        img {
-          padding: 30px 0px 0px 70px;
-        }
-  
-        &_links {
-          flex-direction: row;
-  
-          &_responsive {
-            flex-direction: row;
-            gap: 10px;
-            padding-right: 35px;
-          }
-        }
-       }
+    }
+  }
 }

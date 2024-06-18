@@ -7,72 +7,76 @@ $green_light: #99e2d0;
 $icon_purple: #9356dc;
 $footer_black: #353535;
 $new_green: #008766;
-$buton_gradient: linear-gradient(350deg, #9356DC -11.44%, #FF79DA 123.93%);
-$buton_gradient_transition: linear-gradient(340deg, #9356DC -5.2%, #FF79DA 110.74%);
+$buton_gradient: linear-gradient(350deg, #9356dc -11.44%, #ff79da 123.93%);
+$buton_gradient_transition: linear-gradient(
+  340deg,
+  #9356dc -5.2%,
+  #ff79da 110.74%
+);
 $main_font: roboto, sans-serif;
-$restaurant_font: Shrikhand, sans-serif; 
+$restaurant_font: Shrikhand, sans-serif;
 $shadow_light: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
 $shadow_medium: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
 $shadow_dark: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-$shadow_transition :0px 4px 15px 5px rgba(0, 0, 0, 0.25);
+$shadow_transition: 0px 4px 15px 5px rgba(0, 0, 0, 0.25);
 
 /***********mixins**********/
 
 @mixin font_title {
-    font-weight: bold;
-    font-size: 24px;
-    }    
+  font-weight: bold;
+  font-size: 24px;
+}
 
 @mixin font_second_title {
-    font-weight: 500;
-    font-size: 18px;
-    }
+  font-weight: 500;
+  font-size: 18px;
+}
 
 @mixin font_p {
-    font-weight: 300;
-    font-size: 18px;
-    }
+  font-weight: 300;
+  font-size: 18px;
+}
 
-  @mixin box_shadow($shadow) {
-      box-shadow: $shadow;
-  }
+@mixin box_shadow($shadow) {
+  box-shadow: $shadow;
+}
 
-  @mixin font_restaurant_title {
-    font-family: $restaurant_font;
-    font-size: 28px;
-    font-weight: 400;
-  }
+@mixin font_restaurant_title {
+  font-family: $restaurant_font;
+  font-size: 28px;
+  font-weight: 400;
+}
 
-  @mixin font_p_restaurant {
-    font-weight: 300;
-    font-size: 15px;
-    margin: 0px;
-  }
+@mixin font_p_restaurant {
+  font-weight: 300;
+  font-size: 15px;
+  margin: 0px;
+}
 
-  @mixin ellipse {
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;   
-  }
+@mixin ellipse {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
 
 /**********global style*********/
 
 body {
-    background-color: $white_color;
-    margin: 0px;
-    font-family: $main_font;
-    }
-
-*{
+  background-color: $white_color;
+  margin: 0px;
   font-family: $main_font;
-}    
+}
+
+* {
+  font-family: $main_font;
+}
 
 img {
-    object-fit: contain;
-    max-width: 100%;
+  object-fit: contain;
+  max-width: 100%;
 }
 
 a {
-    color: inherit;
-    text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
